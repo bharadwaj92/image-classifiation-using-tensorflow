@@ -113,9 +113,6 @@ def compu_graph(x_batch):
 	y_pred = tf.nn.softmax(layer_fc2)
 	y_pred_cls = tf.argmax(y_pred, dimension=1)
 	return layer_fc2 , y_pred_cls
-
-
-
 	print(accuracy)
 
 def optimizecostfn(x_batch , y_true_batch,ylabels_ce ):
